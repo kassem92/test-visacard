@@ -6,11 +6,19 @@
     background: linear-gradient(90deg, #282A37 51.18%, rgba(40, 42, 55, 0.5) 100%);
     display: flex;
     justify-content: space-between;
-   
+    position: relative;
+}
+.visa-container img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
 }
 @media (max-width: 768px ) {
     .visa-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 .card-waper{

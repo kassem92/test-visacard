@@ -5,7 +5,7 @@
     margin-top: 30px;
 }
 .vertical-ul-list li{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .input-styled{
     display: flex;
@@ -34,18 +34,20 @@
     color: rgba(192, 192, 200, 1);
     position: relative;
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    /*padding-left: 10%;*/
+    /*padding-right: 10%;*/
 }
 .right-section span{
     font-size: 36px;
     margin-bottom: 10%;
+
 
 }
 .right-section p{
     color: rgba(192, 192, 200, 1);
     /*max-width: 400px;*/
     font-size: 18px;
+    padding: 30px;
 
 }
 .right-section b{
@@ -68,4 +70,11 @@ button{
     color: rgba(41, 43, 56, 1);
     width: 100px;
 
+}
+
+@media (max-width: 768px ) {
+    .right-section{
+       min-height: 350px;
+        margin-bottom: 20px;
+    }
 }

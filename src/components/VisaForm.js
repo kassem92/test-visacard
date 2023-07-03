@@ -38,7 +38,7 @@ export default function VisaForm() {
                 <form >
 
                     <ul className={'vertical-ul-list'}>
-                        <li>
+                        <li >
                             <label className={'input-styled'}>
                                 Name of credit card owner
                                 <input
@@ -56,9 +56,10 @@ export default function VisaForm() {
                             <label className={'input-styled'}>
                                 card number
                                 <input
-                                    type="text"
-                                    name="number"
-                                    pattern="[\d| ]{16,22}"
+                                    type='number'
+                                    name="card-number"
+                                    maxLength='16'
+                                    pattern="/^[0-9]+$/"
                                     required
                                     value={state.number}
                                     onChange={(event)=>changePropertyValue('number',event.target.value)}
@@ -71,9 +72,9 @@ export default function VisaForm() {
                             <label className={'input-styled'}>
                                 expiration date
                                 <input
-                                    type="text"
-                                    name="number"
-                                    placeholder="Card Number"
+                                    type="number"
+                                    name="card-expiry"
+                                    // placeholder="Card Number"
                                     pattern="\d\d/\d\d"
                                     value={state.expiry}
                                     onChange={(event)=>changePropertyValue('expiry',event.target.value)}
@@ -87,7 +88,7 @@ export default function VisaForm() {
                                 cvc
                                 <input
                                     type="number"
-                                    name="cvc"
+                                    name="card-cvc"
                                     pattern="\d{3,4}"
                                     value={state.cvc}
                                     onChange={(event)=>changePropertyValue('number',event.target.value)}
