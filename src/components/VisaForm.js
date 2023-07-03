@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Cards from 'react-credit-cards-2';
-
+import '../styles/vissa-card_styled.css'
 export default function VisaForm() {
     const [state, setState] = useState({
         number: '',

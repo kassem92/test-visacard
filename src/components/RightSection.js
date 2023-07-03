@@ -1,3 +1,5 @@
+import '../styles/sub_components.css'
+
 export default function RightSection() {
     return(
         <>

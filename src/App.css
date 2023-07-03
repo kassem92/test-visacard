@@ -2,17 +2,11 @@
   text-align: center;
   padding: 3% 10%;
 }
-.visa-container{
-  padding: 2% 5%;
-  border-radius: 16px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, #282A37 51.18%, rgba(40, 42, 55, 0.5) 100%);
-  display: flex;
-  justify-content: space-between;
-
+@media (max-width: 768px ) {
+  .App{
+    padding: 2%;
+  }
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -46,80 +40,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-.card-waper{
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-}
-.vertical-ul-list{
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-}
-.vertical-ul-list li{
-  margin-bottom: 30px;
-}
-.input-styled{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: rgba(192, 192, 200, 1);
-  font-size: 16px;
-  align-items: flex-start;
-  width: 100%;
-}
-.input-styled input{
-  background: rgba(50, 54, 69, 1);
-  border-radius: 8px;
-  width: 100%;
-  padding: 5px 10px;
-  margin-top: 5px;
-  /*height: 50px;*/
-}
-
-.right-section{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*justify-content: center;*/
-  color: rgba(192, 192, 200, 1);
-  position: relative;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-.right-section span{
-  font-size: 36px;
-  margin-bottom: 10%;
-
-}
-.right-section p{
-  color: rgba(192, 192, 200, 1);
-  /*max-width: 400px;*/
-  font-size: 18px;
-
-}
-.right-section b{
-  text-decoration: unset;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 50px;
-  font-weight: 400;
-}
-/*.right-section */
-.pay-now-btn{
-  display: flex;
-  justify-content: center;
-}
-button{
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-size: 14px;
-  color: rgba(41, 43, 56, 1);
-  width: 100px;
-
 }

@@ -3,6 +3,7 @@ import './App.css';
 import RightSection from "./components/RightSection";
 import VisaForm from "./components/VisaForm";
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
+
 function App() {
   return (
     <div className="App">
