@@ -43,7 +43,8 @@ export default function VisaForm() {
                                 <input
                                     type="text"
                                     name="card-name"
-                                    placeholder=""
+                                    pattern="[\d| ]{16,22}"
+                                    required
                                     value={state.name}
                                     onChange={(event)=>changePropertyValue('name',event.target.value)}
                                     onFocus={handleInputFocus}
@@ -56,7 +57,8 @@ export default function VisaForm() {
                                 <input
                                     type="text"
                                     name="number"
-                                    placeholder=""
+                                    pattern="[\d| ]{16,22}"
+                                    required
                                     value={state.number}
                                     onChange={(event)=>changePropertyValue('number',event.target.value)}
                                     onFocus={handleInputFocus}
@@ -71,6 +73,7 @@ export default function VisaForm() {
                                     type="text"
                                     name="number"
                                     placeholder="Card Number"
+                                    pattern="\d\d/\d\d"
                                     value={state.expiry}
                                     onChange={(event)=>changePropertyValue('expiry',event.target.value)}
                                     onFocus={handleInputFocus}
@@ -84,6 +87,7 @@ export default function VisaForm() {
                                 <input
                                     type="number"
                                     name="cvc"
+                                    pattern="\d{3,4}"
                                     value={state.cvc}
                                     onChange={(event)=>changePropertyValue('number',event.target.value)}
                                     onFocus={handleInputFocus}
