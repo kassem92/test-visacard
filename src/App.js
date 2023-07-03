@@ -1,16 +1,15 @@
 // import Home from "src/components/Home";
 import './App.css';
-// import RightSection from "./components/RightSection";
+import RightSection from "./components/RightSection";
 import VisaForm from "./components/VisaForm";
 
 function App() {
   return (
     <div className="App">
       <div className={'visa-container'}>
-          <div className={'as'}>
+
               <VisaForm/>
-              {/*<RightSection/>*/}
-          </div>
+              <RightSection/>
 
       </div>
     </div>
