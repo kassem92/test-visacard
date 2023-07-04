@@ -3,12 +3,12 @@ import './App.css';
 import RightSection from "./components/RightSection";
 import VisaForm from "./components/VisaForm";
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
-import imgUrl from './imgs/bgImg.png'
+import nature from './imgs/nature.png'
 function App() {
   return (
     <div className="App">
       <div className={'visa-container'}>
-            <img src={imgUrl}/>
+            <img src={nature}/>
               <VisaForm/>
               <RightSection/>
 
